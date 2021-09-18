@@ -30,6 +30,7 @@ export default {
 <style scoped>
 .introduction {
     padding: 2rem 0;
+    height: 61vh;
 }
 
 .introduction .container {

@@ -29,13 +29,13 @@ export default {
     color: var(--white);
     width: 100%;
     font-family: Montserrat;
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
 }
 
 .footer .container {
-    height: 80px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
