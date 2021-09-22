@@ -4,7 +4,11 @@ const getters = {
     },
 
     $chosenBook(state) {
-        state.chosenBook;
+        return state.chosenBook;
+    },
+
+    $pages(state) {
+        return state.pages;
     },
 };
 

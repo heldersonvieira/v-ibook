@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="`books/${book.id}`">
+    <router-link :to="`/book/${book.id}`">
         <div class="book">
             <img
                 class="book__cover"

@@ -31,12 +31,12 @@ export default {
     justify-items: flex-start;
     flex-wrap: wrap;
     gap: 2.9rem;
-    padding-bottom: 7rem;
+    /* padding-bottom: 7rem; */
 }
 
 h2 {
     font-size: 22px;
-    color: var(--gray);
+    color: var(--black);
     padding: 1rem 0;
 }
 </style>

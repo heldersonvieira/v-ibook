@@ -18,6 +18,6 @@ export default {
     text-align: center;
     font-size: 3.8rem;
     font-weight: 500;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 </style>

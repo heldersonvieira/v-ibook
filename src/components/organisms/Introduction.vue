@@ -1,5 +1,5 @@
 <template>
-    <section class="introduction">
+    <section class="introduction container container">
         <Container>
             <p class="introduction__content">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
@@ -29,8 +29,9 @@ export default {
 
 <style scoped>
 .introduction {
-    padding: 2rem 0;
-    height: 61vh;
+    display: flex;
+    align-items: center;
+    height: 58vh;
 }
 
 .introduction .container {

@@ -28,10 +28,7 @@ export default {
     background: var(--black);
     color: var(--white);
     width: 100%;
-    font-family: Montserrat;
-    /* position: fixed;
-    bottom: 0;
-    left: 0; */
+    margin-top: 5rem;
 }
 
 .footer .container {

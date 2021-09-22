@@ -3,10 +3,10 @@
 </template>
 
 <script>
-import Ibook from '@/Layouts/Ibook.vue';
+import Ibook from '@/layouts/Ibook.vue';
 
 export default {
-  components: { Ibook },
+    components: { Ibook },
 };
 </script>
 
