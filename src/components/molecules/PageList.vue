@@ -6,15 +6,6 @@
 
 <script>
 export default {
-    data() {
-        return {
-            book: {
-                cover: '@/assets/img/page.svg',
-                title: 'Pagina do livro',
-            },
-        };
-    },
-
     computed: {
         $book() {
             return this.$store.getters.$chosenBook;

@@ -18,16 +18,14 @@
                 <p>Pag. {{ page.pageNumber }}</p>
             </li>
         </ul>
-        <div class="current-page">
-            <p v-html="$currentPage"></p>
-            <small>
-                Pag. <span>{{ $pages[indexPage].pageNumber }}</span>
-            </small>
-        </div>
+        <CurrentPage :pages="$pages" :indexPage="indexPage" />
     </section>
 </template>
 <script>
+import { CurrentPage } from '@/components';
 export default {
+    components: { CurrentPage },
+
     data() {
         return { indexPage: 0 };
     },
@@ -39,10 +37,6 @@ export default {
 
         $pages() {
             return this.$store.getters.$pages;
-        },
-
-        $currentPage() {
-            return this.$pages[this.indexPage].text;
         },
     },
 };
@@ -106,26 +100,5 @@ export default {
 
 .generic-page {
     padding: 1rem;
-}
-
-.current-page {
-    width: 600px;
-    height: 700px;
-    padding: 3.8rem 3.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: justify;
-    box-shadow: 10px 10px 30px 4px rgba(0, 0, 0, 0.2);
-}
-
-.current-page p {
-    font-size: 14px;
-    line-height: 1.5rem;
-}
-
-.current-page small {
-    width: 45px;
 }
 </style>

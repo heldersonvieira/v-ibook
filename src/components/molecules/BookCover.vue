@@ -41,19 +41,4 @@ a {
 a:hover {
     opacity: 0.89;
 }
-
-.v-enter-from,
-.v-leave-to {
-    opacity: 1;
-}
-
-.v-enter-to,
-.v-leave-from {
-    opacity: 0;
-}
-
-.v-enter-active,
-.v-leave-active {
-    transition: all 3s ease;
-}
 </style>

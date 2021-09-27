@@ -1,4 +1,4 @@
-import connection from '@/services/axios';
+import connection from '@/services/connection';
 
 export default {
     install: (app) => {

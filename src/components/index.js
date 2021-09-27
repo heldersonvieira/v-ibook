@@ -1,6 +1,7 @@
 export { default as Container } from '@/components/bosons/Container.vue';
 export { default as Logo } from '@/components/atoms/Logo.vue';
 export { default as PageTitle } from '@/components/atoms/PageTitle.vue';
+export { default as CurrentPage } from '@/components/atoms/CurrentPage.vue';
 export { default as BookCard } from '@/components/molecules/BookCard.vue';
 export { default as BookCover } from '@/components/molecules/BookCover.vue';
 export { default as BookInfo } from '@/components/molecules/BookInfo.vue';
