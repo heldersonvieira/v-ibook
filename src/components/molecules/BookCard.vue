@@ -1,11 +1,7 @@
 <template>
     <router-link id="card" :to="`/book/${book.id}`">
         <div class="book">
-            <img
-                class="book__cover"
-                :src="book.cover"
-                :alt="`Capa do livro ${book.title}`"
-            />
+            <Cover class="book__cover" :book="book" />
             <div class="book__info">
                 <h3 class="info__title">{{ book.title }}</h3>
                 <p class="info__author">{{ book.author }}</p>
@@ -15,7 +11,11 @@
 </template>
 
 <script>
+import { Cover } from '@/components';
+
 export default {
+    components: { Cover },
+
     props: {
         book: { type: Object, required: true },
     },

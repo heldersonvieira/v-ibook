@@ -1,16 +1,16 @@
 <template>
-    <transition>
-        <div class="book-cover">
-            <img :src="$book.cover" :alt="`Capa do livro ${$book.title}`" />
-            <router-link :to="`/book/${$book.id}/reading`"
-                >LER LIVRO
-            </router-link>
-        </div>
-    </transition>
+    <div class="book-cover">
+        <Cover :book="$book" />
+        <router-link :to="`/book/${$book.id}/reading`">LER LIVRO </router-link>
+    </div>
 </template>
 
 <script>
+import { Cover } from '@/components';
+
 export default {
+    components: { Cover },
+
     computed: {
         $book() {
             return this.$store.getters.$chosenBook;

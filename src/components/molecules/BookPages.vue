@@ -1,30 +1,23 @@
 <template>
     <section class="book-pages">
         <ul class="pages-list">
-            <li class="page">
-                <img
-                    class="cover-page"
-                    :src="$book.cover"
-                    :alt="`Capa do livro ${$book.title}`"
-                />
-            </li>
-            <li class="page" v-for="(page, index) in $pages" :key="index">
-                <img
-                    class="generic-page"
-                    src="@/assets/img/page.svg"
-                    alt="Próxima página"
-                    @click="indexPage = index"
-                />
-                <p>Pag. {{ page.pageNumber }}</p>
-            </li>
+            <Cover class="page" :book="$book" />
+            <Page
+                class="page"
+                v-for="(page, index) in $pages"
+                :key="index"
+                :page="page"
+                @click="indexPage = index"
+            />
         </ul>
         <CurrentPage :pages="$pages" :indexPage="indexPage" />
     </section>
 </template>
 <script>
-import { CurrentPage } from '@/components';
+import { Cover, Page, CurrentPage } from '@/components';
+
 export default {
-    components: { CurrentPage },
+    components: { Cover, Page, CurrentPage },
 
     data() {
         return { indexPage: 0 };
@@ -86,19 +79,5 @@ export default {
 .page:hover {
     transform: scale(1.05);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.page img {
-    width: 100%;
-}
-
-.page p {
-    position: relative;
-    top: -10px;
-    font-size: 13px;
-}
-
-.generic-page {
-    padding: 1rem;
 }
 </style>

@@ -1,17 +1,17 @@
 <template>
     <Container>
         <section class="book-details">
-            <BookCover />
+            <ReadingButton />
             <BookInfo />
         </section>
     </Container>
 </template>
 
 <script>
-import { Container, BookCover, BookInfo } from '@/components';
+import { Container, ReadingButton, BookInfo } from '@/components';
 
 export default {
-    components: { Container, BookCover, BookInfo },
+    components: { Container, ReadingButton, BookInfo },
 
     created() {
         const idBook = this.$route.params.id;
