@@ -1,7 +1,9 @@
 <template>
-    <div class="book-info">
-        <h2 class="title">{{ $book.title }}</h2>
-        <p class="description" v-html="$book.description"></p>
+    <section class="book-info">
+        <div class="">
+            <h2 class="title">{{ $book.title }}</h2>
+            <p class="description" v-html="$book.description"></p>
+        </div>
 
         <div class="categories">
             <ul>
@@ -25,7 +27,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
