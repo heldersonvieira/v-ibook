@@ -4,6 +4,7 @@ export { default as PageTitle } from '@/components/atoms/PageTitle.vue';
 export { default as CurrentPage } from '@/components/atoms/CurrentPage.vue';
 export { default as Cover } from '@/components/atoms/Cover.vue';
 export { default as Page } from '@/components/atoms/Page.vue';
+export { default as Category } from '@/components/atoms/Category.vue';
 export { default as BookCard } from '@/components/molecules/BookCard.vue';
 export { default as ReadingButton } from '@/components/molecules/ReadingButton.vue';
 export { default as BookInfo } from '@/components/molecules/BookInfo.vue';

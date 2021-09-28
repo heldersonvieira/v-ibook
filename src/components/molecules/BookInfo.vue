@@ -5,13 +5,11 @@
 
         <div class="categories">
             <ul>
-                <li
-                    class="category"
+                <Category
                     v-for="category in $book.categories"
                     :key="category.id"
-                >
-                    {{ category.name }}
-                </li>
+                    :category="category"
+                />
             </ul>
         </div>
 
@@ -31,7 +29,11 @@
 </template>
 
 <script>
+import { Category } from '@/components';
+
 export default {
+    components: { Category },
+
     computed: {
         $book() {
             return this.$store.getters.$chosenBook;
@@ -57,17 +59,6 @@ export default {
 
 .categories ul {
     display: flex;
-}
-
-.category {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.35rem 1rem;
-    background: var(--black);
-    color: var(--white);
-    font-size: 15px;
-    border-radius: 5rem;
 }
 
 .release {
