@@ -1,6 +1,6 @@
 <template>
     <section class="book-info">
-        <div class="">
+        <div class="info">
             <h2 class="title">{{ $book.title }}</h2>
             <p class="description" v-html="$book.description"></p>
         </div>
